@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  namespace :admin do
+      resources :users
+
+      root to: "users#index"
+    end
   get 'sessions/new'
   root "static_pages#home"
   get "/help", to: "static_pages#help"
@@ -9,4 +14,5 @@ Rails.application.routes.draw do
   post   "/login",   to: "sessions#create"
   delete "/logout",  to: "sessions#destroy"
   resources :users
+
 end
