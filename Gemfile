@@ -8,8 +8,11 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 gem "bootstrap-sass"
 gem "sassc-rails"
 gem "rails-controller-testing"
-gem 'bcrypt'
-gem 'administrate'
+gem "bcrypt"
+gem "faker"
+gem "administrate"
+gem "will_paginate"
+gem "bootstrap-will_paginate"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -73,3 +76,4 @@ group :test do
   gem "guard"
   gem "guard-minitest"
 end
+gem "clearance", "~> 2.6"
